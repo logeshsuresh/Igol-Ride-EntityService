@@ -1,0 +1,77 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "IgolEntityService",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 13017,
+          "sha512": "83c39eaf9044278a5c66c1867077f7a0aafbf174571861ae64b71af3796ae0b35a5da8485a57c6472b66abd2ea9b9fc7965ec05450cd1e84b06c505714486c57",
+          "sha256": "45ff00835ddbd78d1d80b273f06906d3bf79a72aa1fef1775e3448ee0e12e6fc",
+          "sha1": "537fb9527791f0034f176d16f85b43d0ae37b155",
+          "md5": "b21e38021ed7483eb2d42beaac06e949"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-mysql",
+          "version": {
+            "requires": "8.4.4"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j"
+        }
+      ],
+      "files": [
+        {
+          "name": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 13017,
+          "sha512": "83c39eaf9044278a5c66c1867077f7a0aafbf174571861ae64b71af3796ae0b35a5da8485a57c6472b66abd2ea9b9fc7965ec05450cd1e84b06c505714486c57",
+          "sha256": "45ff00835ddbd78d1d80b273f06906d3bf79a72aa1fef1775e3448ee0e12e6fc",
+          "sha1": "537fb9527791f0034f176d16f85b43d0ae37b155",
+          "md5": "b21e38021ed7483eb2d42beaac06e949"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "IgolEntityService",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 12928,
+          "sha512": "8184c1171a285f7c6a7adc8f86a01e1c8b168ca4b203535f05f2cebcaf84b04c6a0c9ffd7254670c619e3e2a160942b061c0aa717ff82fa0da1d9336e9faca29",
+          "sha256": "337d3aae1f85160911682cd2e7fb9fd0d84c3ec9dea6b7881bd2edea1a6f7583",
+          "sha1": "ec1f9ce7f3c1aedcec7aa941e25e8af4a07c6b99",
+          "md5": "3d3c980455c1d975ad1529d87b474e9a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-core"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-mysql",
+          "version": {
+            "requires": "8.4.4"
+          }
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation",
+          "version": {
+            "requires": "3.2.5"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j"
+        }
+      ],
+      "files": [
+        {
+          "name": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "IgolEntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 12928,
+          "sha512": "8184c1171a285f7c6a7adc8f86a01e1c8b168ca4b203535f05f2cebcaf84b04c6a0c9ffd7254670c619e3e2a160942b061c0aa717ff82fa0da1d9336e9faca29",
+          "sha256": "337d3aae1f85160911682cd2e7fb9fd0d84c3ec9dea6b7881bd2edea1a6f7583",
+          "sha1": "ec1f9ce7f3c1aedcec7aa941e25e8af4a07c6b99",
+          "md5": "3d3c980455c1d975ad1529d87b474e9a"
+        }
+      ]
+    }
+  ]
+}
