@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DBConstant extends BaseModel{
+public class DBConstant extends BaseModel {
 
     @Column(unique = true, nullable = false)
     private String name;

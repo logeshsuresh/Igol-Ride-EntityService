@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Car extends BaseModel{
+public class Car extends BaseModel {
 
     @Column(unique = true, nullable = false)
     private String plateNumber;

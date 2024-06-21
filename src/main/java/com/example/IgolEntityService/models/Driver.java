@@ -1,6 +1,5 @@
 package com.example.IgolEntityService.models;
 
-import com.example.IgolEntityService.DriverApprovalStatus;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
@@ -44,9 +43,14 @@ public class Driver extends BaseModel {
     @DecimalMax(value = "5.00", message = "Rating must be less than or equal to 5.00")
     private Double rating;
 
+    private Boolean isAvailable;
+
     // 1 : n -> Driver has many Bookings
     @OneToMany(mappedBy = "driver", fetch = FetchType.LAZY)
     @Fetch(FetchMode.SUBSELECT)
     private List<Booking> bookings;
 
+    public enum DriverApprovalStatus {
+        APPROVED, DENIED, PENDING;
+    }
 }
