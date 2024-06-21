@@ -50,7 +50,4 @@ public class Driver extends BaseModel {
     @Fetch(FetchMode.SUBSELECT)
     private List<Booking> bookings;
 
-    public enum DriverApprovalStatus {
-        APPROVED, DENIED, PENDING;
-    }
 }
