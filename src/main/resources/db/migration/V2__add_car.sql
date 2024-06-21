@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS car
     id           BIGINT AUTO_INCREMENT NOT NULL,
     created_at   datetime NOT NULL,
     updated_at   datetime NOT NULL,
-    plate_number VARCHAR(255) NULL,
+    plate_number VARCHAR(255) NOT NULL,
     color_id     BIGINT NULL,
     brand        VARCHAR(255) NULL,
     model        VARCHAR(255) NULL,

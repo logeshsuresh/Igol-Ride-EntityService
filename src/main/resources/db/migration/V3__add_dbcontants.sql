@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS dbconstant
+CREATE TABLE dbconstant
 (
     id         BIGINT AUTO_INCREMENT NOT NULL,
     created_at datetime     NOT NULL,
